@@ -13,6 +13,7 @@ class Lcd :public LcdBase
 
 private:
     void SetLcdState() override;
+    void ShowAdcValue(uint32_t value) override;
 
 };
 

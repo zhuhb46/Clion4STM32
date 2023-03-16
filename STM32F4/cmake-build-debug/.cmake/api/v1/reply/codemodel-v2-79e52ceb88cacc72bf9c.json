@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "STM32F4.elf::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-STM32F4.elf-Debug-e01cab32d381150c858b.json",
+					"jsonFile" : "target-STM32F4.elf-Debug-0798fbc736fa091910dc.json",
 					"name" : "STM32F4.elf",
 					"projectIndex" : 0
 				}
@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/zhuhb/Desktop/STM32F4/cmake-build-debug",
-		"source" : "C:/Users/zhuhb/Desktop/STM32F4"
+		"build" : "C:/Users/zhuhb/Desktop/git_test/Clion4STM32/STM32F4/cmake-build-debug",
+		"source" : "C:/Users/zhuhb/Desktop/git_test/Clion4STM32/STM32F4"
 	},
 	"version" : 
 	{

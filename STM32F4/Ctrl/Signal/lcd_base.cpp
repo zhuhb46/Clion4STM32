@@ -2,7 +2,8 @@
 #include "lcd_base.h"
 
 void LcdBase::Tick() {
-    SetLcdState();
+//    SetLcdState();
+    ShowAdcValue(4567);
 }
 
 void LcdBase::Toggle() {

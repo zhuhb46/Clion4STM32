@@ -163,7 +163,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "c:/Users/zhuhb/Desktop/STM32F4/cmake-build-debug"
+			"value" : "c:/Users/zhuhb/Desktop/git_test/Clion4STM32/STM32F4/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -655,7 +655,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/zhuhb/Desktop/STM32F4"
+			"value" : "C:/Users/zhuhb/Desktop/git_test/Clion4STM32/STM32F4"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1131,7 +1131,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/zhuhb/Desktop/STM32F4/cmake-build-debug"
+			"value" : "C:/Users/zhuhb/Desktop/git_test/Clion4STM32/STM32F4/cmake-build-debug"
 		},
 		{
 			"name" : "STM32F4_IS_TOP_LEVEL",
@@ -1155,7 +1155,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/zhuhb/Desktop/STM32F4"
+			"value" : "C:/Users/zhuhb/Desktop/git_test/Clion4STM32/STM32F4"
 		}
 	],
 	"kind" : "cache",

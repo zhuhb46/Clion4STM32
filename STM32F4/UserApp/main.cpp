@@ -17,6 +17,7 @@ void Main() {
 
     for (;;) {
 
+        statusLcd.Tick();
 
     }
 
@@ -34,8 +35,8 @@ extern "C" void Tim1Callback100Hz() {
         time1cnt++;
     } else {
         statusLed.Toggle();
-        statusLcd.Tick();
-        printf("\r\nEnter Tim1Callback100Hz");
+
+//        printf("\r\nEnter Tim1Callback100Hz");
         time1cnt = 0;
     }
 

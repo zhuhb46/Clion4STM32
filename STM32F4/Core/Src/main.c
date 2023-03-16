@@ -18,6 +18,7 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "adc.h"
 #include "dma.h"
 #include "tim.h"
 #include "usart.h"
@@ -28,6 +29,7 @@
 /* USER CODE BEGIN Includes */
 #include "common_inc.h"
 #include "lcd.h"
+#include "stdio.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -58,7 +60,9 @@ void SystemClock_Config(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-
+uint32_t ADC_Value[100];
+uint8_t i;
+float ad1 = 0;
 /* USER CODE END 0 */
 
 /**
@@ -93,17 +97,33 @@ int main(void)
   MX_USART1_UART_Init();
   MX_FSMC_Init();
   MX_TIM7_Init();
+  MX_ADC1_Init();
   /* USER CODE BEGIN 2 */
     LCD_Init();
     POINT_COLOR=RED;
-    Main();
+    HAL_ADC_Start_DMA(&hadc1, ADC_Value, 100);
+//    Main();
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+      if(HAL_IS_BIT_SET(HAL_ADC_GetState(&hadc1), HAL_ADC_STATE_REG_EOC))
+      {
+          for(i = 0; i < 100; i++)
+          {
+              ad1 += ADC_Value[i];
+//              LCD_ShowNum(30, 40,ADC_Value[i],4,24);
+//              printf("Vol: %.4f \r\n", ADC_Value[i]*3.3f/4096);
+          }
+          ad1 /=  100.0;
+//          printf("PA4 Reading Vol Value: %.4f \r\n", ad1*3.3f/4096);
+          printf("%.4f \r\n", ad1*3.3f/4096);
+//          HAL_Delay(500);
 
+      }
+//      LCD_ShowNum(30, 40,1234,4,24);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */

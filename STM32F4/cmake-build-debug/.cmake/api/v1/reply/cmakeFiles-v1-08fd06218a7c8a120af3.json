@@ -129,8 +129,8 @@
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "C:/Users/zhuhb/Desktop/STM32F4/cmake-build-debug",
-		"source" : "C:/Users/zhuhb/Desktop/STM32F4"
+		"build" : "C:/Users/zhuhb/Desktop/git_test/Clion4STM32/STM32F4/cmake-build-debug",
+		"source" : "C:/Users/zhuhb/Desktop/git_test/Clion4STM32/STM32F4"
 	},
 	"version" : 
 	{

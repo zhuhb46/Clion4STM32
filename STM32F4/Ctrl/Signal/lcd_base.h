@@ -23,6 +23,8 @@ private:
     uint8_t blinkPhase = 1;
 
     virtual void SetLcdState() = 0;
+    virtual void ShowAdcValue(uint32_t value) = 0;
+
 };
 
 
